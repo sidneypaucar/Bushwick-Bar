@@ -66,39 +66,52 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 
 #### Wireframes
 
-![Dummy Link](url)
+![Figma Wireframes](https://www.figma.com/file/Mp9xvtITffV30SWTc5efGB/Bushwick-Bar?node-id=0%3A1)
 
-- Desktop Landing
+- Home
 
-![Dummy Link](url)
+![Home](https://i.imgur.com/GlSoGuA.png)
 
-- Desktop Hero
+- SignIn
 
-![Dummy Link](url)
+![SignIn](https://i.imgur.com/2kQaKKy.png)
 
-- Resource Index
+- SignUp
 
-![Dummy Link](url)
+![SignUp](https://i.imgur.com/N9jmzZd.png)
 
-- Resource Show
+- UserHome
 
-![Dummy Link](url)
+![UserHome](https://i.imgur.com/nXXqnSs.png)
 
-- Tablet Resource Index
+- Ingredients
 
-![Dummy Link](url)
+![Ingredients](https://i.imgur.com/Depm58D.png)
 
-- Mobile Resource Index
+- Cocktails
 
-#### Component Tree
+![Cocktails](https://i.imgur.com/nhnUjYQ.png)
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+- CreateCocktail
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![CreateCocktail](https://i.imgur.com/uxzM24X.png)
+
+- EditCocktail
+
+![EditCocktail](https://i.imgur.com/oiLFUnS.png)
+
+- DetailCocktail
+
+![DetailCocktail](https://i.imgur.com/ef2mZ1T.png)
+
+
+
+#### Component Hierarchy
+
+[Whimsical](https://whimsical.com/3cE76w9wo4cfYch8hSnULA)
+[Component Hierarchy](https://i.imgur.com/1LcZdfA.png)
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -107,16 +120,54 @@ src
       |__ fonts
       |__ graphics
       |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Layout
+            |__ Layout.css
+            |__ Layout.jsx
+      |__ Nav
+            |__ Nav.css
+            |__ Nav.jsx
+      |__ Footer
+            |__ Footer.css
+            |__ Footer.jsx
+|__ containers/
+      |__ MainContainer.jsx
+|__ screens/
+      |__ Home
+            |__ Home.css
+            |__ Home.jsx
+      |__ SignIn
+            |__ SignIn.css
+            |__ SignIn.jsx
+      |__ SignOut
+            |__ SignOut.css
+            |__ SignOut.jsx
+      |__ UserHome
+            |__ UserHome.css
+            |__ UserHome.jsx
+      |__ Ingredients
+            |__ Ingredients.css
+            |__ Ingredients.jsx
+      |__ Cocktails
+            |__ Cocktails.css
+            |__ Cocktails.jsx
+      |__ CreateCocktail
+            |__ CreateCocktail.css
+            |__ CreateCocktail.jsx
+      |__ EditCocktail
+            |__ EditCocktail.css
+            |__ EditCocktail.jsx
+      |__ DetailCocktail
+            |__ DetailCocktail.css
+            |__ DetailCocktail.jsx
 |__ services/
+      |__ apiConfig.jsx
+      |__ auth.jsx
+      |__ Cocktails.jsx
 
 ```
 
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -124,7 +175,6 @@ src
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -132,16 +182,16 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+[ERD ](https://i.imgur.com/6jAaPeA.png)
 <br>
 
 ***
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- I would love to implement a ratings system where a user can rate others cocktails.
+- Be able to send user-made cocktails to surrounding bars via a structured email for pickup or possibly even delivery.
+
 
 ***
 
