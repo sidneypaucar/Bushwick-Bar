@@ -171,9 +171,11 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Complete Backend    |    H     |     1 hrs      |     1 hrs     |     TBD     |
+| Start FrontEnd      |    H     |     1 hrs      |     1 hrs     |     TBD     |
+| Start CSS           |    H     |     .5 hrs     |     1 hrs     |     TBD     |
+| CSS cont'd          |    H     |     .5 hrs     |     1 hrs     |     TBD     |
+| TOTAL               |          |     3 hrs      |     4 hrs     |     TBD     |
 
 
 <br>
