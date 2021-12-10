@@ -98,7 +98,7 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 
 - EditCocktail
 
-![EditCocktail](https://i.imgur.com/zbWMkht.png)
+![EditCocktail](https://i.imgur.com/q9eyVkv.png)
 
 - DetailCocktail
 
@@ -109,7 +109,7 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 #### Component Hierarchy
 
 [Whimsical](https://whimsical.com/3cE76w9wo4cfYch8hSnULA)
-[Component Hierarchy](https://i.imgur.com/1LcZdfA.png)
+![Component Hierarchy](https://i.imgur.com/1LcZdfA.png)
 
 #### Component Architecture
 
