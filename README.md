@@ -66,7 +66,7 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 
 #### Wireframes
 
-![Figma Wireframes](https://www.figma.com/file/Mp9xvtITffV30SWTc5efGB/Bushwick-Bar?node-id=0%3A1)
+[Figma](https://www.figma.com/file/Mp9xvtITffV30SWTc5efGB/Bushwick-Bar?node-id=0%3A1)
 
 - Home
 
@@ -98,7 +98,7 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 
 - EditCocktail
 
-![EditCocktail](https://i.imgur.com/oiLFUnS.png)
+![EditCocktail](https://i.imgur.com/zbWMkht.png)
 
 - DetailCocktail
 
@@ -182,15 +182,15 @@ src
 
 #### ERD Model
 
-[ERD ](https://i.imgur.com/6jAaPeA.png)
+![ERD](https://i.imgur.com/6jAaPeA.png)
 <br>
 
 ***
 
 ## Post-MVP
 
-- I would love to implement a ratings system where a user can rate others cocktails.
-- Be able to send user-made cocktails to surrounding bars via a structured email for pickup or possibly even delivery.
+- Implement ratings system where a user can rate others cocktails.
+- Be able to send user-made cocktails to surrounding bars via a google maps api for pickup or possibly even delivery.
 
 
 ***
