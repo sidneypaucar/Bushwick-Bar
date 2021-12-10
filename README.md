@@ -19,48 +19,52 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Bushwick Bar** is a full-stack web application where any member can openly craft their very own drink. From a virgin margarita, to a "Mr.Chow"("The Hangover" Movie Reference) blackout cocktail, the possibilites are ENDLESS. Craft your very own and head on out to the dancefloor!_
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+- Front end built with ReactJS
+	- 8+ separate components
+	- Utilize React Router
+	- Integrate with a Ruby on Rails Backend
+	- Full CRUD on Ingredients
+- RESTful JSON API built with Ruby on Rails
+	- At least 1 association between tables
+	- Full CRUD on the ingredients table
+  - A database of 2+ tables
+- Style with flexbox/grid
+- Implement responsive design
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Build a database of Users, Cocktails, and Ingredients_
+- _Allow a user to view all crafted Cocktails._
+- _Allow a user to add, edit, and delete their own Cocktails._
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Front-end framework using javascript._ |
+|   React Router   | _Used for routing through React components._ |
+|   Ruby on Rails  | _Back-end framework for creating JSON API._ |
+|      Axios       | _Used for making front-end API calls._ |
+|      BCYRPT      | _Used for password hashing._ |
+|      Rack-CORS   | _Ruby on Rails Cross-Origin Resource Sharing (CORS)._ |
+|       JWT        | _Compact URL-safe means of representing claims to be transferred between two parties._ |
 
 <br>
 
 ### Client (Front End)
 
 #### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
 ![Dummy Link](url)
 
