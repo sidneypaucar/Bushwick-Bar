@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post '/auth/signin', to: 'authentications#signin'
+  get '/auth/verify', to: 'authentications#verify'
   resources :ingredients
   resources :cocktails
   resources :users
