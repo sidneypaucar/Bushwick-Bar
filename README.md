@@ -214,6 +214,8 @@ PG::DuplicateTable: ERROR:  relation "ingredients" already exists
 ```
 An issue that I came across early in development was trying to delete an orphaned migration. Usually once a migration is done, no other changes could be made. After trying to test some functionality on Postman, I realized that I had one migration pending. As anyone would I ran `rails db:migrate` and had realized that I had two of the same "ingredient" tables. (Must have created a duplicate at some point by running the command twice when toggling the up arrow in terminal and not realize).
 ```
+
+
 ➜  Bushwick-Bar git:(main) ✗ rails db:migrate
 Running via Spring preloader in process 37405
 == 20211211222012 CreateIngredients: migrating ================================
@@ -242,15 +244,13 @@ PG::DuplicateTable: ERROR:  relation "ingredients" already exists
 -e:1:in `<main>'
 Tasks: TOP => db:migrate
 (See full trace by running task with --trace)
+
+
 ```
-
-
-
 So I ran `rake db:migrate:status` to see which migration ID it was, and deleted it. This is wrong. You cannot just simply delete a migration file once it is already applied to the database. 
-
-
-
 ```
+
+
 ➜  Bushwick-Bar git:(main) ✗ rake db:migrate:status
 
 database: Bushwick_Bar_development
@@ -262,10 +262,9 @@ database: Bushwick_Bar_development
    up     20211211222012  ********** NO FILE **********
    up     20211211222508  Cocktail ingredient
   down    20211211082707  Create ingredients
+
+
 ```
-
-
-
 The problem is rake db:rollback wasn't working at all because of the missing file, thus not being able to get rid of the NO FILE message.
 
 I've tried deleting the migration via Postgre by entering my database's console and entering`DELETE FROM schema_migrations WHERE version IN 20211211222012;`, running `bundle exec rake db:migrate:status`.No luck. Duplicate still present. 
@@ -275,10 +274,9 @@ Restarted VS and Terminal. No luck. Eventually I had decided to ` git reset --ha
 Ran `rake db:migrate:status` on terminal. Same message. Turns out resetting my  commits to an earlier point didn't reset my database as well. 
 
 I haven't ran `rails db:reset` this whole time because I was certain that it would reset my whole database and have me start from scratch. Not, that it would drop, create, schema.load, and seed the database as well! I ran the command and voila!
-
-
-
 ```
+
+
 ➜  Bushwick-Bar git:(main) ✗ rake db:migrate:status
 
 database: Bushwick_Bar_development
@@ -289,8 +287,7 @@ database: Bushwick_Bar_development
    up     20211211221557  Create cocktails
    up     20211211222012  Create ingredients
    up     20211211222508  Cocktail ingredient
+
+
 ```
-
-
-
  Learned about the different aspects in regards to migrations and their functionality first hand. Going in loops, spending hours on a simple error to eventually solve it, without any type of help, is amazing. Although it seems like an easy fix, it was the thought process and learning experience is that made it all worthwhile. Maybe that's why there are professionals, they've spent hours stuck solving a problem so that you don't have to!
