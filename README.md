@@ -205,5 +205,78 @@ src
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ## Code Issues & Resolutions
+```
+StandardError: An error has occurred, this and all later migrations canceled:
 
-> Use this section to list of all major issues encountered and their resolution.
+PG::DuplicateTable: ERROR:  relation "ingredients" already exists
+
+```
+An issue that I came across early in development was trying to delete an orphaned migration. Usually once a migration is done, no other changes could be made. After trying to test some functionality on Postman, I realized that I had one migration pending. As anyone would I ran `rails db:migrate` and had realized that I had two of the same "ingredient" tables. (Must have created a duplicate at some point by running the command twice when toggling the up arrow in terminal and not realize).
+```
+➜  Bushwick-Bar git:(main) ✗ rails db:migrate
+Running via Spring preloader in process 37405
+== 20211211222012 CreateIngredients: migrating ================================
+-- create_table(:ingredients)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+PG::DuplicateTable: ERROR:  relation "ingredients" already exists
+/Users/sidneypaucar/Desktop/general_assembly/SEI/unit_4/Bushwick-Bar/db/migrate/20211211222012_create_ingredients.rb:3:in `change'
+<internal:/Users/sidneypaucar/.rbenv/versions/3.0.0/lib/ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+<internal:/Users/sidneypaucar/.rbenv/versions/3.0.0/lib/ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+-e:1:in `<main>'
+
+Caused by:
+ActiveRecord::StatementInvalid: PG::DuplicateTable: ERROR:  relation "ingredients" already exists
+/Users/sidneypaucar/Desktop/general_assembly/SEI/unit_4/Bushwick-Bar/db/migrate/20211211222012_create_ingredients.rb:3:in `change'
+<internal:/Users/sidneypaucar/.rbenv/versions/3.0.0/lib/ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+<internal:/Users/sidneypaucar/.rbenv/versions/3.0.0/lib/ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+-e:1:in `<main>'
+
+Caused by:
+PG::DuplicateTable: ERROR:  relation "ingredients" already exists
+/Users/sidneypaucar/Desktop/general_assembly/SEI/unit_4/Bushwick-Bar/db/migrate/20211211222012_create_ingredients.rb:3:in `change'
+<internal:/Users/sidneypaucar/.rbenv/versions/3.0.0/lib/ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+<internal:/Users/sidneypaucar/.rbenv/versions/3.0.0/lib/ruby/3.0.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+-e:1:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+```
+So I ran `rake db:migrate:status` to see which migration ID it was, and deleted it. This is wrong. You cannot just simply delete a migration file once it is already applied to the database. 
+
+```
+➜  Bushwick-Bar git:(main) ✗ rake db:migrate:status
+
+database: Bushwick_Bar_development
+
+ Status   Migration ID    Migration Name
+--------------------------------------------------
+   up     20211211221504  Create users
+   up     20211211221557  Create cocktails
+   up     20211211222012  ********** NO FILE **********
+   up     20211211222508  Cocktail ingredient
+  down    20211211082707  Create ingredients
+```
+The problem is rake db:rollback wasn't working at all because of the missing file, thus not being able to get rid of the NO FILE message.
+
+I've tried deleting the migration via Postgre by entering my database's console and entering`DELETE FROM schema_migrations WHERE version IN 20211211222012;`, running `bundle exec rake db:migrate:status`.No luck. Duplicate still present. 
+
+Restarted VS and Terminal. No luck. Eventually I had decided to ` git reset --hard` and my most recent commit since I thought that this error was something that I had recently done. Apparently not, This duplicate table was created 5 commits ago. Tried to save myself the trouble by taking a step back and resetting myself from all the mess (back when I had the one `ingredients` table), even if it meant having a huge setback. To avoid this, I just instinctively decided to whip out my phone and record all the files changed with each of those commits (Personally found it easier than going through a ton of screenshots). Ran `git push --force` since I am the only one adding to the main branch.
+
+Ran `rake db:migrate:status` on terminal. Same message. Turns out resetting my  commits to an earlier point didn't reset my database as well. 
+
+I haven't ran `rails db:reset` this whole time because I was certain that it would reset my whole database and have me start from scratch. Not, that it would drop, create, schema.load, and seed the database as well! I ran the command and voila!
+```
+➜  Bushwick-Bar git:(main) ✗ rake db:migrate:status
+
+database: Bushwick_Bar_development
+
+ Status   Migration ID    Migration Name
+--------------------------------------------------
+   up     20211211221504  Create users
+   up     20211211221557  Create cocktails
+   up     20211211222012  Create ingredients
+   up     20211211222508  Cocktail ingredient
+```
+
+ Learned about the different aspects in regards to migrations and their functionality first hand. Going in loops, spending hours on a simple error to eventually solve it, without any type of help, is amazing. Although it seems like an easy fix, it was the thought process and learning experience is that made it all worthwhile. Maybe that's why there are professionals, they've spent hours stuck solving a problem so that you don't have to!
