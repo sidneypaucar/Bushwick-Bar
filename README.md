@@ -283,4 +283,4 @@ database: Bushwick_Bar_development
 
 
 ```
- Learned about the different aspects in regards to migrations and their functionality first hand. Going in loops, spending hours on a simple error to eventually solve it, without any type of help, is amazing. Although it seems like an easy fix, it was the thought process and learning experience is that made it all worthwhile. Maybe that's why there are professionals, they've spent hours stuck solving a problem so that you don't have to!
+ Learned about the different aspects in regards to migrations and their functionality first hand. Going in loops, spending hours researching an error to eventually solve it, without any type of help, is amazing. Although it seems like an easy fix, it was the thought process and learning experience is that made it all worthwhile. Maybe that's why there are professionals, they've spent hours stuck solving a problem so that you don't have to!

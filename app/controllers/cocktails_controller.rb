@@ -1,5 +1,7 @@
 class CocktailsController < ApplicationController
-  before_action :set_cocktail, only: [:show, :update, :destroy]
+  before_action :set_cocktail, only: :show
+  before_action :authorize_request, only: :create
+  before_action :set_user_cocktail, only: [:update, :destroy]
 
   # GET /cocktails
   def index
@@ -10,15 +12,15 @@ class CocktailsController < ApplicationController
 
   # GET /cocktails/1
   def show
-    render json: @cocktail
+    render json: @cocktail, include: :ingredients
   end
 
   # POST /cocktails
   def create
     @cocktail = Cocktail.new(cocktail_params)
-
+    @cocktail.user = @current_user
     if @cocktail.save
-      render json: @cocktail, status: :created, location: @cocktail
+      render json: @cocktail, status: :created
     else
       render json: @cocktail.errors, status: :unprocessable_entity
     end
@@ -44,8 +46,12 @@ class CocktailsController < ApplicationController
       @cocktail = Cocktail.find(params[:id])
     end
 
+    def set_user_cocktail
+      @cocktail = @current_user.cocktails.find(params[:id])
+    end
+
     # Only allow a list of trusted parameters through.
     def cocktail_params
-      params.require(:cocktail).permit(:name, :user_id)
+      params.require(:cocktail).permit(:name)
     end
 end
