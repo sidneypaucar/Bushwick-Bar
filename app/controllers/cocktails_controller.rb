@@ -40,6 +40,15 @@ class CocktailsController < ApplicationController
     @cocktail.destroy
   end
 
+  def add_ingredient
+    @cocktail = Cocktail.find(cocktail_params[:cocktail_id])
+    @ingredient = Ingredient.find (cocktail_params[:ingredient_id])
+
+    @cocktail.ingredients << @ingredient
+
+    render json: @cocktail.ingredients
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_cocktail
@@ -52,6 +61,6 @@ class CocktailsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cocktail_params
-      params.require(:cocktail).permit(:name)
+      params.require(:cocktail).permit(:name, :cocktail_id, :ingredient_id)
     end
 end
