@@ -1,3 +1,3 @@
 class Ingredient < ApplicationRecord
-  Has_and_belongs_to_many :cocktails
+  has_and_belongs_to_many :cocktails
 end

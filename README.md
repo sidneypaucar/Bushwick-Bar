@@ -57,6 +57,9 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 |   Ruby on Rails  | _Back-end framework for creating JSON API._ |
 |      Axios       | _Used for making front-end API calls._ |
 |      BCYRPT      | _Used for password hashing._ |
+|  Awesome Print   | _Makes rails objects and data in IRB look cleaner._ |
+|      Pry Rails   | _A runtime developer console and IRB alternative._ |
+|      Faker       | _Fake library that generates fake data._ |
 |      Rack-CORS   | _Ruby on Rails Cross-Origin Resource Sharing (CORS)._ |
 |       JWT        | _Compact URL-safe means of representing claims to be transferred between two parties._ |
 
@@ -191,9 +194,9 @@ src
 
 ## Post-MVP
 
-- Implement ratings system where a user can rate others cocktails.
+- Create an entry form on the landing page in which the user selects their taste preference (Boozy, Sweet, Sour, Bitter, Astrigent etc.) and 10 cocktail combinations are generated with different ingredients based on the users choice. Never struggle deciding a drink again!
 - Be able to send user-made cocktails to surrounding bars via a google maps api for pickup or possibly even delivery.
-
+- Implement ratings system where a user can rate others cocktails.
 
 ***
 
