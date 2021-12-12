@@ -205,13 +205,6 @@ src
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ## Code Issues & Resolutions
-```
-StandardError: An error has occurred, this and all later migrations canceled:
-
-PG::DuplicateTable: ERROR:  relation "ingredients" already exists
-
-
-```
 An issue that I came across early in development was trying to delete an orphaned migration. Usually once a migration is done, no other changes could be made. After trying to test some functionality on Postman, I realized that I had one migration pending. As anyone would I ran `rails db:migrate` and had realized that I had two of the same "ingredient" tables. (Must have created a duplicate at some point by running the command twice when toggling the up arrow in terminal and not realize).
 ```
 
