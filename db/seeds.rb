@@ -63,3 +63,13 @@ end
 
 puts "#{Cocktail.count} cocktails created"
 
+
+@first_cocktail = Cocktail.first
+
+Cocktail.all.each do |cocktail|
+  @ingredients = Ingredient.all.shuffle
+  rand(1..6).times do |i|
+    cocktail.ingredients << @ingredients[i]
+  end
+  puts "#{cocktail.ingredients.length} ingredients added"
+end
