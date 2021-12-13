@@ -1,12 +1,13 @@
 import { useState,useEffect } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, useHistory } from 'react-router-dom'
 import CocktailCreate from '../screens/CocktailCreate'
 import Cocktails from '../screens/Cocktails'
-import { getAllCocktails } from '../services/cocktail'
+import { getAllCocktails, postCocktail } from '../services/cocktail'
 
 export default function MainContainer() {
   const [cocktails, setCocktails] = useState([])
   const [ingredients, setIngredients] = useState([])
+  const history = useHistory(); 
 
   useEffect(() => {
     const fetchCocktails = async () => {
@@ -16,11 +17,17 @@ export default function MainContainer() {
     fetchCocktails();
   }, [])
 
+  const handleCocktailCreate = async (formData) => {
+    const newCocktail = await postCocktail(formData);
+    setCocktails(prevState => [...prevState, newCocktail]);
+    history.push('/cocktails');
+  };
+
   return (
     <div>
       <Switch>
         <Route path='/cocktails/new'>
-          <CocktailCreate />
+          <CocktailCreate handleCocktailCreate={handleCocktailCreate}/>
         </Route>
         <Route path='/cocktails'>
           <Cocktails cocktails={cocktails}/>

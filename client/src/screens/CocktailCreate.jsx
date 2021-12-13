@@ -1,6 +1,6 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
-export default function CocktailCreate() {
+export default function CocktailCreate({handleCocktailCreate}) {
   const [formData, setFormData] = useState({
   name:''
 })
@@ -8,14 +8,17 @@ export default function CocktailCreate() {
   
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
+    setFormData(prevState => ({
       ...prevState,
       [name]: value,
     }))
   }
 
   return (
-    <form>
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      handleCocktailCreate(formData);
+    }}>
       <h3>Create Cocktail</h3>
       <label>
         Name:
