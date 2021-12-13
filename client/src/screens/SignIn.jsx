@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-export default function SignIn() {
+export default function SignIn(props) {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
   })
   const { username, password } = formData;
+  const { handleSignIn } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,8 +18,11 @@ export default function SignIn() {
   }
 
   return (
-    <form>
-      <h3>Sign In</h3>
+    <form onSubmit={(e)=> {
+      e.preventDefault();
+      handleSignIn(formData);
+    }}>
+      <h3>SignIn</h3>
       <label>
         Username:
         <input
@@ -39,7 +43,7 @@ export default function SignIn() {
         />
       </label>
       <br />
-      <Link to='/signup'>SignUp</Link>
+      <Link to='/signup'>Sign Up</Link>
       <button>Submit</button>
     </form>
   )

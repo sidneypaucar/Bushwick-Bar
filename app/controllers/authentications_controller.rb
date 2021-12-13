@@ -20,7 +20,6 @@ class AuthenticationsController < ApplicationController
     render json: @current_user.attributes.except("password_digest"), status: :ok
   end
 
-
   private
 
   def signin_params
