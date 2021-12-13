@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
+import CocktailCreate from '../screens/CocktailCreate'
 import Cocktails from '../screens/Cocktails'
 import { getAllCocktails } from '../services/cocktail'
 
@@ -19,7 +20,7 @@ export default function MainContainer() {
     <div>
       <Switch>
         <Route path='/cocktails/new'>
-          <h1>Create form</h1>
+          <CocktailCreate />
         </Route>
         <Route path='/cocktails'>
           <Cocktails cocktails={cocktails}/>
