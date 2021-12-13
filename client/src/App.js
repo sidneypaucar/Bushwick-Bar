@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom'
 import Layout from './layouts/Layout';
 import SignIn from './screens/SignIn';
-import { signinUser, signupUser, verifyUser } from './services/auth';
+import { signinUser, signupUser, verifyUser,removeToken } from './services/auth';
 import SignUp from './screens/SignUp';
 
 function App() {
@@ -30,9 +30,15 @@ function App() {
     history.push('/')
   }
 
+  const handleSignOut = () => {
+    setCurrentUser(null);
+    localStorage.removeItem('authToken');
+    removeToken();
+  }
+
   return (
     <div className="App">
-      <Layout currentUser={currentUser}>
+      <Layout currentUser={currentUser} handleSignOut={handleSignOut}>
         <Switch>
           <Route path='/signin'>
             <SignIn handleSignIn={handleSignIn}/>
