@@ -16,6 +16,12 @@ export default function Layout({ currentUser, handleSignOut, children }) {
         ) : (
           <Link to='/signin'>SignIn/SignUp</Link>
         )}
+        {currentUser && (
+          <nav>
+          <Link to='/cocktails'>Cocktails</Link>
+          <Link to='/ingredients'>Ingredients</Link>
+        </nav>
+        )}
       </header>
       {children}
     </div>
