@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
+import Cocktails from '../screens/Cocktails'
 import { getAllCocktails } from '../services/cocktail'
 
 export default function MainContainer() {
@@ -17,8 +18,11 @@ export default function MainContainer() {
   return (
     <div>
       <Switch>
+        <Route path='/cocktails/new'>
+          <h1>Create form</h1>
+        </Route>
         <Route path='/cocktails'>
-          <h1>Cocktails List</h1>
+          <Cocktails cocktails={cocktails}/>
         </Route>
         <Route path='/'>
           <h1>Home</h1>
