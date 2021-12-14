@@ -5,13 +5,18 @@ export const getAllCocktails = async () => {
   return resp.data
 }
 
+export const getOneCocktail = async (id) => {
+  const resp = await api.get(`/cocktails/${id}`)
+  return resp.data
+}
+
 export const postCocktail = async (cocktailData) => {
   const resp = await api.post('/cocktails', { cocktail: cocktailData });
   return resp.data;
 }
 
 export const putCocktail = async (id, cocktailData) => {
-  const resp = await api.put(`/cocktails/${id}`, { cocktail: cocktailData });
+  const resp = await api.put(`/cocktails/${id}`, { cocktail: cocktailData })
   return resp.data
 }
 

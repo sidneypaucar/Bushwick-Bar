@@ -6,6 +6,7 @@ import Cocktails from '../screens/Cocktails'
 import { getAllCocktails, postCocktail, deleteCocktail, putCocktail } from '../services/cocktail'
 import { getAllIngredients } from '../services/ingredient'
 import Ingredients from '../screens/Ingredients'
+import CocktailDetail from '../screens/CocktailDetail'
 
 export default function MainContainer({ currentUser }) {
   const [cocktails, setCocktails] = useState([]);
@@ -59,12 +60,20 @@ export default function MainContainer({ currentUser }) {
           <CocktailCreate handleCocktailCreate={handleCocktailCreate}/>
         </Route>
 
+        <Route path={'/cocktails/:id'}>
+          <CocktailDetail />
+        </Route>
+
         <Route path='/cocktails'>
           <Cocktails cocktails={cocktails} handleCocktailDelete={handleCocktailDelete} currentUser={currentUser}/>
         </Route>
 
         <Route path='/ingredients'>
           <Ingredients ingredients={ingredients}/>
+        </Route>
+
+        <Route path='/'>
+          <h1>Home</h1>
         </Route>
 
       </Switch>
