@@ -5,7 +5,9 @@ export default function Ingredients({ ingredients }) {
     <div>
       <h3>Ingredients</h3>
       {ingredients.map((ingredient) => (
-        <p>{ingredient.name}</p>
+        <p key={ingredient.id}>
+          {ingredient.name}
+        </p>
       ))}
     </div>
   )

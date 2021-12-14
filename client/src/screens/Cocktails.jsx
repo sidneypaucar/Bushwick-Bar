@@ -6,8 +6,10 @@ export default function Cocktails({ cocktails, handleCocktailDelete, currentUser
     <div>
       <h3>Cocktails</h3>
       {cocktails.map((cocktail) => (
-        <div>
-          <p>{cocktail.name}</p>
+        <div key={cocktail.id}>
+          <Link to={`/cocktails/${cocktail.id}`}>
+            <p>{cocktail.name}</p>
+          </Link>
           {currentUser && currentUser.id === cocktail.user_id && (
             <>
             <Link to={`/cocktails/${cocktail.id}/edit`}>
