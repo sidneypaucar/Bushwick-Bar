@@ -11,10 +11,10 @@ export const postCocktail = async (cocktailData) => {
 }
 
 export const putCocktail = async (id, cocktailData) => {
-  const resp = await api.put(`/cocktails/${id}`, { cocktail: cocktailData })
+  const resp = await api.put(`/cocktails/${id}`, { cocktail: cocktailData });
   return resp.data
 }
 
 export const deleteCocktail = async (id) => {
-  await api.delete(`/cocktails/${id}'`)
+  await api.delete(`/cocktails/${id}`)
 }

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 export default function CocktailEdit({ cocktails, handleCocktailUpdate }) {
   const [formData, setFormData] = useState({
-  name:''
+  name:'',
   })
   const { name } = formData;
   const { id } = useParams();
@@ -12,7 +12,7 @@ export default function CocktailEdit({ cocktails, handleCocktailUpdate }) {
     const prefillFormData = () => {
       const cocktailItem = cocktails.find((cocktail) => cocktail.id === Number(id))
       setFormData({ name: cocktailItem.name });
-    }
+    };
     if (cocktails.length) prefillFormData();
   }, [cocktails, id])
  

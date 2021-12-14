@@ -3,12 +3,7 @@ import { useState, useEffect} from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom'
 import Layout from './layouts/Layout';
 import SignIn from './screens/SignIn';
-import {
-  signinUser,
-  signupUser,
-  verifyUser,
-  removeToken,
-} from './services/auth';
+import { signinUser, signupUser, verifyUser, removeToken } from './services/auth';
 import SignUp from './screens/SignUp';
 import MainContainer from './containers/MainContainer';
 
@@ -54,7 +49,7 @@ function App() {
             <SignUp handleSignUp={handleSignUp}/>
           </Route>
           <Route path='/'>
-            <MainContainer/>
+            <MainContainer currentUser={currentUser}/>
           </Route>
         </Switch>
       </Layout>
