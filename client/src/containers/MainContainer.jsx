@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react'
 import { Switch, Route, useHistory } from 'react-router-dom'
 import CocktailCreate from '../screens/CocktailCreate'
 import Cocktails from '../screens/Cocktails'
-import { getAllCocktails, postCocktail } from '../services/cocktail'
+import { getAllCocktails, postCocktail, deleteCocktail } from '../services/cocktail'
 
 export default function MainContainer() {
   const [cocktails, setCocktails] = useState([])
@@ -23,6 +23,12 @@ export default function MainContainer() {
     history.push('/cocktails');
   };
 
+  const handleCocktailDelete = async (id) =>{
+    await deleteCocktail(id);
+    setCocktails(prevState=> prevState.filter(cocktail => cocktail.id !== id))
+
+  }
+
   return (
     <div>
       <Switch>
@@ -30,7 +36,7 @@ export default function MainContainer() {
           <CocktailCreate handleCocktailCreate={handleCocktailCreate}/>
         </Route>
         <Route path='/cocktails'>
-          <Cocktails cocktails={cocktails}/>
+          <Cocktails cocktails={cocktails} handleCocktailDelete={handleCocktailDelete}/>
         </Route>
         <Route path='/'>
           <h1>Home</h1>

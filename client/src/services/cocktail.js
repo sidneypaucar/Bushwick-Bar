@@ -9,3 +9,7 @@ export const postCocktail = async (cocktailData) => {
   const resp = await api.post('/cocktails', { cocktail: cocktailData });
   return resp.data;
 }
+
+export const deleteCocktail = async (id) => {
+  await api.delete(`/cocktails/${id}'`)
+}

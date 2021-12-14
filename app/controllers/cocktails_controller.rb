@@ -1,6 +1,6 @@
 class CocktailsController < ApplicationController
   before_action :set_cocktail, only: :show
-  before_action :authorize_request, only: :create
+  before_action :authorize_request, only: [:create, :update, :destroy]
   before_action :set_user_cocktail, only: [:update, :destroy]
 
   # GET /cocktails
