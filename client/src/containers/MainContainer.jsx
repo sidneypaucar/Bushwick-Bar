@@ -4,7 +4,8 @@ import CocktailCreate from '../screens/CocktailCreate'
 import CocktailEdit from '../screens/CocktailEdit'
 import Cocktails from '../screens/Cocktails'
 import { getAllCocktails, postCocktail, deleteCocktail, putCocktail } from '../services/cocktail'
-import { getAllIngredients } from '../services/ingredients'
+import { getAllIngredients } from '../services/ingredient'
+import Ingredients from '../screens/Ingredients'
 
 export default function MainContainer({ currentUser }) {
   const [cocktails, setCocktails] = useState([]);
@@ -62,8 +63,8 @@ export default function MainContainer({ currentUser }) {
           <Cocktails cocktails={cocktails} handleCocktailDelete={handleCocktailDelete} currentUser={currentUser}/>
         </Route>
 
-        <Route path='/'>
-          <h1>Home</h1>
+        <Route path='/ingredients'>
+          <Ingredients ingredients={ingredients}/>
         </Route>
 
       </Switch>
