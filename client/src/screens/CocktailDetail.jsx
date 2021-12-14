@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 
-import { getOneCocktail } from '../services/cocktail';
+import { getAllCocktails, getOneCocktail } from '../services/cocktail';
   
 export default function CocktailDetail() {
   const [cocktail, setCocktail] = useState(null);
@@ -17,7 +17,14 @@ export default function CocktailDetail() {
 
   return (
     <div>
-      <h3>{cocktail?.name}</h3>
+      {cocktail && (
+        <div>
+          <h3>{cocktail.name}</h3>
+          {cocktail.ingredients.map((ingredient) => (
+            <p key= {ingredient.id}> {ingredient.name}</p>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
