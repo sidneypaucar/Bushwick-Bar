@@ -9,7 +9,9 @@ export default function Cocktails({ cocktails, handleCocktailDelete }) {
 
         <div>
           <p>{cocktail.name}</p>
+          <Link to={`/cocktails/${cocktail.id}/edit`}>
           <button>Edit</button>
+          </Link>
           <button onClick={()=>handleCocktailDelete(cocktail.id)}>Delete</button>
         </div>
       ))}

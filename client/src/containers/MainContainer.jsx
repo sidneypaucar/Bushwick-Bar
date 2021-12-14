@@ -1,12 +1,12 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Switch, Route, useHistory } from 'react-router-dom'
 import CocktailCreate from '../screens/CocktailCreate'
+import CocktailEdit from '../screens/CocktailEdit'
 import Cocktails from '../screens/Cocktails'
-import { getAllCocktails, postCocktail, deleteCocktail } from '../services/cocktail'
+import { getAllCocktails, postCocktail, deleteCocktail, putCocktail } from '../services/cocktail'
 
 export default function MainContainer() {
   const [cocktails, setCocktails] = useState([])
-  const [ingredients, setIngredients] = useState([])
   const history = useHistory(); 
 
   useEffect(() => {
@@ -19,19 +19,29 @@ export default function MainContainer() {
 
   const handleCocktailCreate = async (formData) => {
     const newCocktail = await postCocktail(formData);
-    setCocktails(prevState => [...prevState, newCocktail]);
+    setCocktails((prevState) => [...prevState, newCocktail]);
     history.push('/cocktails');
   };
 
   const handleCocktailDelete = async (id) =>{
     await deleteCocktail(id);
-    setCocktails(prevState=> prevState.filter(cocktail => cocktail.id !== id))
+    setCocktails(prevState => prevState.filter(cocktail => cocktail.id !== id));
+  }
 
+  const handleCocktailUpdate = async (id, formData) => {
+    const newCocktail = await putCocktail(id, formData)
+    setCocktails(prevState => prevState.map(cocktail => {
+      return cocktail.id === Number(id) ? newCocktail :cocktail
+    }));
+    history.push('/cocktails')
   }
 
   return (
     <div>
       <Switch>
+        <Route path= '/cocktails/:id/edit'>
+          <CocktailEdit cocktails={cocktails} handleCocktailUpdate={handleCocktailUpdate}/>
+        </Route>
         <Route path='/cocktails/new'>
           <CocktailCreate handleCocktailCreate={handleCocktailCreate}/>
         </Route>
