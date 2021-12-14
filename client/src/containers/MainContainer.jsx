@@ -4,9 +4,11 @@ import CocktailCreate from '../screens/CocktailCreate'
 import CocktailEdit from '../screens/CocktailEdit'
 import Cocktails from '../screens/Cocktails'
 import { getAllCocktails, postCocktail, deleteCocktail, putCocktail } from '../services/cocktail'
+import { getAllIngredients } from '../services/ingredients'
 
 export default function MainContainer({ currentUser }) {
   const [cocktails, setCocktails] = useState([]);
+  const [ingredients, setIngredients] = useState([]);
   const history = useHistory(); 
 
   useEffect(() => {
@@ -15,6 +17,14 @@ export default function MainContainer({ currentUser }) {
       setCocktails(cocktailList);
     }
     fetchCocktails();
+  }, [])
+
+  useEffect(() => {
+    const fetchIngredients = async () => {
+      const cocktailList = await getAllIngredients();
+      setIngredients(cocktailList);
+    }
+    fetchIngredients();
   }, [])
 
   const handleCocktailCreate = async (formData) => {
