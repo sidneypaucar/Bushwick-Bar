@@ -61,7 +61,7 @@ export default function MainContainer({ currentUser }) {
         </Route>
 
         <Route path={'/cocktails/:id'}>
-          <CocktailDetail />
+          <CocktailDetail ingredients={ingredients} />
         </Route>
 
         <Route path='/cocktails'>

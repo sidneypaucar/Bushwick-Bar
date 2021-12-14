@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 
-import { getAllCocktails, getOneCocktail } from '../services/cocktail';
+import { getOneCocktail } from '../services/cocktail';
   
-export default function CocktailDetail() {
+export default function CocktailDetail( {ingredients} ) {
   const [cocktail, setCocktail] = useState(null);
   const { id } = useParams()
 
@@ -25,6 +25,13 @@ export default function CocktailDetail() {
           ))}
         </div>
       )}
+      <form>
+        <select>
+          {ingredients.map(ingredient => (
+            <option key= {ingredient.id}>{ingredient.name}</option>
+          ))}
+        </select>
+      </form>
     </div>
   )
 }
