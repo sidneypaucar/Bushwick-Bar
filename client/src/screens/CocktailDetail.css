@@ -9,3 +9,17 @@
   width: 100%;
   color: black;
 }
+
+/* .cocktail_detail_background {
+  
+} */
+
+.cocktail_details {
+  position: center;
+  text-align: center;
+  border-style: solid;
+  border-color: green;
+  border-width: 5px;
+  display: inline-block;
+  color: #D8D8D8;
+}

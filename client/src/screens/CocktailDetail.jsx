@@ -19,10 +19,10 @@ export default function CocktailDetail( {ingredients} ) {
   return (
     <div className= "cocktail_detail_background">
       {cocktail && (
-        <div>
-          <h3>{cocktail.name}</h3>
+        <div className='cocktail_details'>
+          <h2 className='cocktail_name'>{cocktail.name}</h2>
           {cocktail.ingredients.map((ingredient) => (
-            <p key= {ingredient.id}> {ingredient.name}</p>
+            <p className='ingredient_id' key= {ingredient.id}> {ingredient.name}</p>
           ))}
         </div>
       )}
