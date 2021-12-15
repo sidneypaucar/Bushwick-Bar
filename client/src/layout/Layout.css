@@ -15,7 +15,6 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  position: absolute;
   z-index: 10;
   width: 100%;
   right: 0;
@@ -32,13 +31,13 @@
   margin-bottom: 0%;
 }
 
+.title:hover {
+  color: rgb(189, 148, 62);
+}
+
 .title_route {
   color: #D8D8D8;
   text-decoration: none;
-}
-
-.title_route:hover {
-  color: rgb(189, 148, 62);
 }
 
 .username_signout {

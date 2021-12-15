@@ -1,12 +1,11 @@
-/* .footer {
-  color: red;
-  position: absolute;
+.footer {
+  position: bottom;
   bottom: 0px;
   display: block;
   width: 100vw;
   padding: 5px;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   margin-top: 50px;
 
   border-style: solid;
@@ -16,9 +15,9 @@
 
 .external-link {
   padding-right: 20px;
-  color: black;
+  color: #D8D8D8;
 }
 
 .external-link:hover {
   color: orange;
-} */
+}
