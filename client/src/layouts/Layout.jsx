@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Layout({ currentUser, handleSignOut, children }) {
 
   return (
-    <div>
+    <div className = "header">
       <header>
         <h1>Bushwick Bar</h1>
         {currentUser ? (

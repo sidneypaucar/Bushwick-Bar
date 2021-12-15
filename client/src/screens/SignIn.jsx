@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import './SignIn.css'
 
 export default function SignIn(props) {
   const [formData, setFormData] = useState({
@@ -18,7 +19,8 @@ export default function SignIn(props) {
   }
 
   return (
-    <form onSubmit={(e)=> {
+    <div className= "sign-in-background">
+    <form className="SignInForm" onSubmit={(e)=> {
       e.preventDefault();
       handleSignIn(formData);
     }}>
@@ -45,6 +47,7 @@ export default function SignIn(props) {
       <br />
       <Link to='/signup'>Sign Up</Link>
       <button>Submit</button>
-    </form>
+      </form>
+    </div>
   )
 }
