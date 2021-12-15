@@ -57,7 +57,7 @@ Ingredient.create!(name: 'Raspberry')
 
 puts "#{Ingredient.count} ingredients created"
 
-5.times do
+10.times do
   Cocktail.create!(name: Faker::FunnyName.name, user: @admin) 
 end
 

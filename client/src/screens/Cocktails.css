@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+
 .cocktails_background {
   background-image: 
     url(https://www.lifesavvy.com/p/uploads/2020/07/e0441e10.jpg);
@@ -15,20 +17,19 @@
   border-width: 5px;
   color: #D8D8D8;
   text-decoration: underline;
-  margin-top: 10vh;
 }
 
 .cocktails_list, .cocktails_title {
+  font-family: 'Cormorant', serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .cocktail_link {
+  font-family: 'Cormorant', serif;
   color: #D8D8D8;
   text-decoration: none;
-  /* position: center;
-  display: inline-block; */
 }
 
 .cocktail_link:hover {
@@ -37,12 +38,9 @@
 }
 
 .cocktail_name{
+  font-family: 'Cormorant', serif;
+  font-size: 24px;
   border-style: solid;
   border-color: blue;
   border-width: 5px;
 }
-/* 
-  border-style: solid;
-  border-color: blue;
-  border-width: 5px;
-*/

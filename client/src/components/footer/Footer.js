@@ -9,7 +9,7 @@ export default function Footer() {
       <footer>
         <ExternalLink className='external-link' href='https://www.linkedin.com/in/sidney-paucar/'><LinkedInIcon />
         </ExternalLink>
-        <ExternalLink className='external-link' href='https://github.com/sidneypaucar'><GitHubIcon />
+        <ExternalLink className='external-link' href='https://github.com/sidneypaucar/Bushwick-Bar'><GitHubIcon />
         </ExternalLink>
         </footer>
     </div>
