@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Cocktails.css'
   
 export default function Cocktails({ cocktails, handleCocktailDelete, currentUser }) {
   return (
-    <div>
+    <div className= "cocktails_background">
       <h3>Cocktails</h3>
       {cocktails.map((cocktail) => (
         <div key={cocktail.id}>

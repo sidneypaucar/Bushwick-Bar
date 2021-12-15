@@ -1,0 +1,11 @@
+.ingredients_background {
+  background-image: 
+    url(https://img.grouponcdn.com/deal/4XiTkN7Ue7wKskFmmraYA1uYpKWR/4X-2048x1229/v1/c870x524.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-attachment: fixed;
+  height: calc(100vh - 55px);
+  width: 100%;
+  color: black;
+}

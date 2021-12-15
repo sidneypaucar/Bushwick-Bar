@@ -19,8 +19,8 @@ export default function SignIn(props) {
   }
 
   return (
-    <div className= "sign-in-background">
-    <form className="SignInForm" onSubmit={(e)=> {
+    <div className= "sign_in_background">
+    <form className="sign_in_form" onSubmit={(e)=> {
       e.preventDefault();
       handleSignIn(formData);
     }}>

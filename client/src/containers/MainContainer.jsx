@@ -73,6 +73,7 @@ export default function MainContainer({ currentUser }) {
         </Route>
 
         <Route path='/'>
+          
           <h1>Home</h1>
         </Route>
 

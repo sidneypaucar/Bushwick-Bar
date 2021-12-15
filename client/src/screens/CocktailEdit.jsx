@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
+import './CocktailEdit.css'
 
 export default function CocktailEdit({ cocktails, handleCocktailUpdate }) {
   const [formData, setFormData] = useState({
@@ -25,6 +26,7 @@ export default function CocktailEdit({ cocktails, handleCocktailUpdate }) {
   }
 
   return (
+    <div className= "cocktail_edit_background">
     <form onSubmit={(e) => {
       e.preventDefault();
       handleCocktailUpdate(id, formData);
@@ -36,5 +38,6 @@ export default function CocktailEdit({ cocktails, handleCocktailUpdate }) {
       </label>
       <button>Submit</button>
     </form>
+    </div>
   )
 }

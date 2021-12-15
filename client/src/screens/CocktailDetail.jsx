@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
+import './CocktailDetail.css'
 
 import { getOneCocktail } from '../services/cocktail';
   
@@ -16,7 +17,7 @@ export default function CocktailDetail( {ingredients} ) {
   }, [id])
 
   return (
-    <div>
+    <div className= "cocktail_detail_background">
       {cocktail && (
         <div>
           <h3>{cocktail.name}</h3>

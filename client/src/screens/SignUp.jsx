@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './SignUp.css'
 
 export default function SignUp(props) {
   const [formData, setFormData] = useState({
@@ -18,7 +19,8 @@ export default function SignUp(props) {
   }
 
   return (
-    <form
+    <div className= "sign_up_background">
+    <form className= "sign_up_form"
       onSubmit={(e) => {
       e.preventDefault();
       handleSignUp(formData);
@@ -55,6 +57,7 @@ export default function SignUp(props) {
       </label>
       <br />
       <button>Submit</button>
-    </form>
+      </form>
+    </div>
   )
 }

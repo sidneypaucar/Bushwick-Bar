@@ -15,6 +15,7 @@ export default function CocktailCreate({handleCocktailCreate}) {
   }
 
   return (
+    <div className= "cocktail_creat_background">
     <form onSubmit={(e) => {
       e.preventDefault();
       handleCocktailCreate(formData);
@@ -26,5 +27,6 @@ export default function CocktailCreate({handleCocktailCreate}) {
       </label>
       <button>Submit</button>
     </form>
+    </div>
   )
 }
