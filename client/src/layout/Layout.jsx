@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Button from '@mui/material/Button';
 import Footer from '../components/footer/Footer'
 import './Layout.css'
 
@@ -14,9 +15,9 @@ export default function Layout({ currentUser, handleSignOut, children }) {
         {currentUser ? (
           <div className="username_signout">
             <p className= 'username'>{currentUser.username}</p>
-            <button className= 'sign_out_button' onClick={handleSignOut}>
+            <Button variant="outlined"  color="primary" className= 'sign_out_button' onClick={handleSignOut}>
               Sign Out
-            </button>
+            </Button>
           </div>
         ) : (
           <Link className = 'sign_in_button' to='/signin'>Sign In</Link>
