@@ -4,13 +4,21 @@
   border-width: 5px;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 .header {
   border-style: solid;
   border-color: red;
   border-width: 5px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+
 }
 
 .title {
@@ -18,13 +26,21 @@
   border-color: red;
   border-width: 5px;
   text-align: left;
+  color: #D8D8D8;
+  margin-bottom: 0%;
+}
+
+.username_signout {
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
 }
 
 .username {
   border-style: solid;
   border-color: red;
   border-width: 5px;
-  color: red
+  color: #D8D8D8;
 }
 
 .sign_out_button{
@@ -50,6 +66,7 @@
   border-color: red;
   border-width: 5px;
   text-decoration: none;
+  color: #D8D8D8;
 }
 
 .cocktails_button:hover {
@@ -62,6 +79,7 @@
   border-color: red;
   border-width: 5px;
   text-decoration: none;
+  color: #D8D8D8;
 }
 
 .ingredients_button:hover {

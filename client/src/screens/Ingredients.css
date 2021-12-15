@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-position: 100%;
   background-attachment: fixed;
-  height: calc(100vh - 55px);
   width: 100%;
   color: black;
 }
