@@ -24,8 +24,8 @@ export default function SignIn(props) {
       e.preventDefault();
       handleSignIn(formData);
     }}>
-      <h3>SignIn</h3>
-      <label>
+      <h3 className= 'sign_in_title'>Sign In</h3>
+      <label className = 'username_text_box'>
         Username:
         <input
           type='text'
@@ -33,9 +33,9 @@ export default function SignIn(props) {
           value={username}
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <label>
+      </label >
+        <br />
+      <label className = 'password_text_box'>
         Password:
         <input
           type='password'
@@ -43,10 +43,13 @@ export default function SignIn(props) {
           value={password}
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <Link to='/signup'>Sign Up</Link>
-      <button>Submit</button>
+        </label>
+        <br />
+        <br />
+        <button>Submit</button>
+        <br />
+        <br />
+      <Link className= 'sign_up_link' to='/signup'>Don't have an account? Sign Up.</Link>
       </form>
     </div>
   )

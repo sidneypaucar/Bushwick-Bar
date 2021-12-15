@@ -7,14 +7,29 @@
   background-attachment: fixed;
   height: calc(100vh - 55px);
   width: 100%;
-  color: black;
 }
 
 .sign_in_form {
-  position: relative;
+  position: center;
   text-align: center;
   border-style: solid;
   border-color: white;
   border-width: 5px;
   display: inline-block;
+  color: #D8D8D8;
 }
+
+.sign_in_title {
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  color: #D8D8D8;
+}
+
+/* .username_text_box{
+
+} */
+
+/* .password_text_box{
+
+} */

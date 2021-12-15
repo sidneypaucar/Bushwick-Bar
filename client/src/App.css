@@ -1,3 +1,10 @@
 .App {
   text-align: center;
+  border-style: solid;
+  border-color: greenyellow;
+  border-width: 5px;
 }
+
+/* a {
+  color: #D8D8D8;
+} */

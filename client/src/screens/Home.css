@@ -7,5 +7,26 @@
   background-attachment: fixed;
   height: calc(100vh - 55px);
   width: 100%;
-  color: black;
+}
+
+.home-header {
+	font-family: 'IM Fell English', serif;
+  backdrop-filter: blur(5px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: whitesmoke;
+	font-size: 10vw;
+	margin: 0;
+	padding: 15%;
+  padding-bottom: 0%;
+}
+
+.slogan {
+  color: whitesmoke;
+  /* backdrop-filter: blur(5px); */
+  margin-top: 0;
+
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
 }

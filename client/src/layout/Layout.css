@@ -1,0 +1,54 @@
+.layout{
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+
+.header {
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+
+.title {
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+  text-align: left;
+}
+
+.username {
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+
+.sign_out_button{
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+
+.sign_in_button{
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+
+.nav {
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}
+
+.cocktails_button{
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+
+.ingredients_button{
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
