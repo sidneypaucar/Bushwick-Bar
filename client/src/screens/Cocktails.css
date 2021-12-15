@@ -12,9 +12,6 @@
 }
 
 .cocktails_title{
-  border-style: solid;
-  border-color: blue;
-  border-width: 5px;
   color: #D8D8D8;
   text-decoration: underline;
 }
@@ -24,6 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 40px;
 }
 
 .cocktail_link {
@@ -40,7 +38,6 @@
 .cocktail_name{
   font-family: 'Cormorant', serif;
   font-size: 24px;
-  border-style: solid;
-  border-color: blue;
-  border-width: 5px;
+  margin-bottom: 0;
+
 }

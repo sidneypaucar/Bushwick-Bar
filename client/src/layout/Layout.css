@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+
 .layout{
   border-style: solid;
   border-color: red;
   border-width: 5px;
 }
-
-/* html, body {
-  overflow: hidden;
-} */
 
 .header {
   border-style: solid;
@@ -22,10 +20,10 @@
 }
 
 .title {
+  font-family: 'Cormorant', serif;
   border-style: solid;
   border-color: red;
   border-width: 5px;
-  /* text-align: left; */
   color: #D8D8D8;
   margin-bottom: 0%;
 }
@@ -49,6 +47,7 @@
   border-style: solid;
   border-color: red;
   border-width: 5px;
+  margin-bottom: 0;
   color: #D8D8D8;
 }
 
@@ -74,6 +73,7 @@
 }
 
 .cocktails_button{
+  font-family: 'Cormorant', serif;
   border-style: solid;
   border-color: red;
   border-width: 5px;
@@ -83,10 +83,10 @@
 
 .cocktails_button:hover {
   color: rgb(189, 148, 62);
-  text-decoration: underline;
 }
 
 .ingredients_button{
+  font-family: 'Cormorant', serif;
   border-style: solid;
   border-color: red;
   border-width: 5px;
@@ -96,5 +96,4 @@
 
 .ingredients_button:hover {
   color: rgb(189, 148, 62);
-  text-decoration: underline;
 }
