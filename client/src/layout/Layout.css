@@ -6,21 +6,19 @@
   border-width: 5px;
 }
 
-.header {
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
+.header { 
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  z-index: 10;
-  right: 0;
-  left: 0
-
+  /* z-index: 10; */
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .title {
   font-family: 'Cormorant', serif;
+  font-size: 36;
   border-style: solid;
   border-color: red;
   border-width: 5px;
@@ -47,6 +45,9 @@
   border-style: solid;
   border-color: red;
   border-width: 5px;
+
+  font-family: 'Cormorant', serif;
+  font-size: 36;
   margin-bottom: 0;
   color: #D8D8D8;
 }
@@ -74,6 +75,7 @@
 
 .cocktails_button{
   font-family: 'Cormorant', serif;
+  font-size: 15px;
   border-style: solid;
   border-color: red;
   border-width: 5px;
@@ -87,6 +89,7 @@
 
 .ingredients_button{
   font-family: 'Cormorant', serif;
+  font-size: 15px;
   border-style: solid;
   border-color: red;
   border-width: 5px;

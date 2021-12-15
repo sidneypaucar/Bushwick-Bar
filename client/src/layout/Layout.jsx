@@ -7,13 +7,10 @@ export default function Layout({ currentUser, handleSignOut, children }) {
 
   return (
     <div className = "layout">
-      <header className="header">
-
-
+      <div className="header">
     <Link className='title_route' to='/'>
       <h1 className="title">BUSHWICK BAR</h1>
     </Link>
-
         {currentUser ? (
           <div className="username_signout">
             <p className= 'username'>{currentUser.username}</p>
@@ -30,7 +27,7 @@ export default function Layout({ currentUser, handleSignOut, children }) {
           <Link className= 'ingredients_button' to='/ingredients'>Ingredients</Link>
           </nav>
         )}
-      </header>
+      </div>
       {children}
       <Footer/>
     </div>
