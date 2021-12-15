@@ -3,10 +3,10 @@ import './Ingredients.css'
 
 export default function Ingredients({ ingredients }) {
   return (
-    <div className= "ingredients_background">
-      <h3>Ingredients</h3>
+    <div className= "ingredient_background">
+      <h3 className='ingredient_title'>Ingredients</h3>
       {ingredients.map((ingredient) => (
-        <p key={ingredient.id}>
+        <p className='ingredient_id' key={ingredient.id}>
           {ingredient.name}
         </p>
       ))}

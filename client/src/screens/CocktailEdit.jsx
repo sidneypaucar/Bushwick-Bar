@@ -27,12 +27,12 @@ export default function CocktailEdit({ cocktails, handleCocktailUpdate }) {
 
   return (
     <div className= "cocktail_edit_background">
-    <form onSubmit={(e) => {
+    <form className= 'cocktail_edit_form' onSubmit={(e) => {
       e.preventDefault();
       handleCocktailUpdate(id, formData);
     }}>
-      <h3>Edit Cocktail</h3>
-      <label>
+      <h3 className='cocktail_edit_title'>Edit Cocktail</h3>
+      <label className='cocktail_edit_name'>
         Name:
         <input type='text' name='name' value={name} onChange={handleChange} />
       </label>
