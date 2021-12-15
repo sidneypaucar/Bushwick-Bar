@@ -7,6 +7,7 @@ import { getAllCocktails, postCocktail, deleteCocktail, putCocktail } from '../s
 import { getAllIngredients } from '../services/ingredient'
 import Ingredients from '../screens/Ingredients'
 import CocktailDetail from '../screens/CocktailDetail'
+import Home from '../screens/Home'
 
 export default function MainContainer({ currentUser }) {
   const [cocktails, setCocktails] = useState([]);
@@ -73,8 +74,7 @@ export default function MainContainer({ currentUser }) {
         </Route>
 
         <Route path='/'>
-          
-          <h1>Home</h1>
+          <Home/>
         </Route>
 
       </Switch>

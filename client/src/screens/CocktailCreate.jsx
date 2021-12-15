@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './CocktailCreate.css'
 
 export default function CocktailCreate({handleCocktailCreate}) {
   const [formData, setFormData] = useState({
@@ -15,7 +16,7 @@ export default function CocktailCreate({handleCocktailCreate}) {
   }
 
   return (
-    <div className= "cocktail_creat_background">
+    <div className= "cocktail_create_background">
     <form onSubmit={(e) => {
       e.preventDefault();
       handleCocktailCreate(formData);
