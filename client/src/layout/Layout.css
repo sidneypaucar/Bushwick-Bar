@@ -9,9 +9,9 @@
 } */
 
 .header {
-  /* border-style: solid; */
-  /* border-color: red; */
-  /* border-width: 5px; */
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -27,7 +27,7 @@
   border-style: solid;
   border-color: red;
   border-width: 5px;
-  text-align: left;
+  /* text-align: left; */
   color: #D8D8D8;
   margin-bottom: 0%;
 }
@@ -35,23 +35,11 @@
 .title_route {
   color: #D8D8D8;
   text-decoration: none;
-  /* position: center;
-  display: inline-block; */
 }
 
 .title_route:hover {
   color: rgb(189, 148, 62);
 }
-
-
-
-
-
-
-
-
-
-
 
 .username_signout {
   border-style: solid;
@@ -76,6 +64,9 @@
   border-style: solid;
   border-color: red;
   border-width: 5px;
+  color: #D8D8D8;
+  margin-bottom: 0%;
+  text-decoration: none;
 }
 
 .nav {
