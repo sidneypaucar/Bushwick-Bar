@@ -21,6 +21,7 @@
   border-style: solid;
   border-color: red;
   border-width: 5px;
+  color: red
 }
 
 .sign_out_button{
@@ -45,10 +46,22 @@
   border-style: solid;
   border-color: red;
   border-width: 5px;
+  text-decoration: none;
+}
+
+.cocktails_button:hover {
+  color: rgb(189, 148, 62);
+  text-decoration: underline;
 }
 
 .ingredients_button{
   border-style: solid;
   border-color: red;
   border-width: 5px;
+  text-decoration: none;
+}
+
+.ingredients_button:hover {
+  color: rgb(189, 148, 62);
+  text-decoration: underline;
 }

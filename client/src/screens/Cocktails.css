@@ -7,5 +7,35 @@
   background-attachment: fixed;
   height: calc(100vh - 55px);
   width: 100%;
-  color: black;
 }
+
+.cocktails_title{
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+  color: #D8D8D8;
+  text-decoration: underline;
+}
+
+.cocktail_link {
+  color: #D8D8D8;
+  text-decoration: none;
+  /* position: center;
+  display: inline-block; */
+}
+
+.cocktail_link:hover {
+  color: rgb(189, 148, 62);
+  text-decoration: underline;
+}
+
+.cocktail_name{
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+}
+/* 
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+*/
