@@ -1,7 +1,7 @@
 .cocktail_create_background {
   background-image: 
     url(https://cdn1.matadornetwork.com/blogs/1/2010/05/Bartender-setting-drink-on-fire-1200x853.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   background-attachment: fixed;

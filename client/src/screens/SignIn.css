@@ -1,3 +1,15 @@
+.sign_in_background {
+  background-image: 
+  url(https://bevspot.com/wp-content/uploads/2016/04/bigstock-Whiskey-Glass-With-Ice-In-Fron-65925334-scaled.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-attachment: fixed;
+  height: calc(100vh - 55px);
+  width: 100%;
+  color: black;
+}
+
 .sign_in_form {
   position: relative;
   text-align: center;
@@ -5,16 +17,4 @@
   border-color: white;
   border-width: 5px;
   display: inline-block;
-}
-
-.sign_in_background {
-  background-image: 
-    url(https://bevspot.com/wp-content/uploads/2016/04/bigstock-Whiskey-Glass-With-Ice-In-Fron-65925334-scaled.jpg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-attachment: fixed;
-  height: calc(100vh - 55px);
-  width: 100%;
-  color: black;
 }

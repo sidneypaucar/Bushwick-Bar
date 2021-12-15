@@ -1,7 +1,7 @@
 .home {
   background-image: 
     url(https://media.cntraveler.com/photos/60f9bdcaa41bc3aa30d3ae33/master/w_1732,h_1154,c_limit/The%20Grey%20Room,%20Tokyo_The%20Grey%20Room%20Bar%20Counter%20Night.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   background-attachment: fixed;

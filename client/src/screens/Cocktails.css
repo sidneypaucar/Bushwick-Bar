@@ -1,7 +1,7 @@
 .cocktails_background {
   background-image: 
     url(https://www.lifesavvy.com/p/uploads/2020/07/e0441e10.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   background-attachment: fixed;

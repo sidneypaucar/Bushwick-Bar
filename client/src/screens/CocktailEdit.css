@@ -1,7 +1,7 @@
 .cocktail_edit_background{
   background-image: 
     url(https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2021/05/SOCIAL_ALT_Flair_tiktok_GETTY_1920x1280.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   background-attachment: fixed;

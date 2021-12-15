@@ -1,7 +1,7 @@
 .sign_up_background{
   background-image: 
     url(https://bevspot.com/wp-content/uploads/2016/04/bigstock-Whiskey-Glass-With-Ice-In-Fron-65925334-scaled.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   background-attachment: fixed;
