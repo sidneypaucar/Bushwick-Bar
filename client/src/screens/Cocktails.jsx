@@ -6,6 +6,7 @@ export default function Cocktails({ cocktails, handleCocktailDelete, currentUser
   return (
     <div className= "cocktails_background">
       <h3 className='cocktails_title'>Cocktails</h3>
+      <div className='cocktails_list'>
       {cocktails.map((cocktail) => (
         <div key={cocktail.id}>
           <Link className='cocktail_link' to={`/cocktails/${cocktail.id}`}>
@@ -21,6 +22,7 @@ export default function Cocktails({ cocktails, handleCocktailDelete, currentUser
             )}
         </div>
       ))}
+        </div>
       <Link to='/cocktails/new'>
         <br />
         <br />

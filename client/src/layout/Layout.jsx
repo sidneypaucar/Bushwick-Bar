@@ -10,11 +10,10 @@ export default function Layout({ currentUser, handleSignOut, children }) {
       <header className="header">
 
 
-    {/* <Link to className='title' to='/'>
-      <h1 className="title">Bushwick Bar</h1>
-    </Link> */}
+    <Link className='title_route' to='/'>
+      <h1 className="title">BUSHWICK BAR</h1>
+    </Link>
 
-        <h1 className="title">Bushwick Bar</h1>
         {currentUser ? (
           <div className="username_signout">
             <p className= 'username'>{currentUser.username}</p>
@@ -35,7 +34,5 @@ export default function Layout({ currentUser, handleSignOut, children }) {
       {children}
       <Footer/>
     </div>
-
-
   )
 }

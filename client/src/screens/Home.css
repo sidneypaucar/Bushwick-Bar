@@ -1,12 +1,14 @@
 .home {
   background-image: 
     url(https://media.cntraveler.com/photos/60f9bdcaa41bc3aa30d3ae33/master/w_1732,h_1154,c_limit/The%20Grey%20Room,%20Tokyo_The%20Grey%20Room%20Bar%20Counter%20Night.jpg);
+  filter: blur(3px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   background-attachment: fixed;
   height: calc(100vh - 55px);
   width: 100%;
+  z-index: -2;
 }
 
 .home-header {
@@ -15,7 +17,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: whitesmoke;
-	font-size: 10vw;
+	font-size: 7vw;
 	margin: 0;
 	padding: 15%;
   padding-bottom: 0%;

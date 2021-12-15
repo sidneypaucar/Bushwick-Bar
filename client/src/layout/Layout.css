@@ -4,20 +4,22 @@
   border-width: 5px;
 }
 
-html, body {
+/* html, body {
   overflow: hidden;
-}
+} */
 
 .header {
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
+  /* border-style: solid; */
+  /* border-color: red; */
+  /* border-width: 5px; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   position: absolute;
   z-index: 10;
   width: 100%;
+  right: 0;
+  left: 0
 
 }
 
@@ -29,6 +31,27 @@ html, body {
   color: #D8D8D8;
   margin-bottom: 0%;
 }
+
+.title_route {
+  color: #D8D8D8;
+  text-decoration: none;
+  /* position: center;
+  display: inline-block; */
+}
+
+.title_route:hover {
+  color: rgb(189, 148, 62);
+}
+
+
+
+
+
+
+
+
+
+
 
 .username_signout {
   border-style: solid;
