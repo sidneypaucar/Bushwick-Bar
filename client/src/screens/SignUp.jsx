@@ -25,8 +25,8 @@ export default function SignUp(props) {
       e.preventDefault();
       handleSignUp(formData);
     }}>
-      <h3>SignUp</h3>
-      <label>
+      <h3 className= 'sign_up_title'>Sign Up</h3>
+      <label className = 'username_text_box'>
         Username:
         <input
           type='text'
@@ -36,7 +36,7 @@ export default function SignUp(props) {
         />
       </label>
       <br />
-      <label>
+      <label className = 'email_text_box'>
         Email:
         <input
           type='text'
@@ -46,7 +46,7 @@ export default function SignUp(props) {
         />
       </label>
       <br />
-      <label>
+      <label className = 'password_text_box'>
         Password:
         <input
           type='password'
