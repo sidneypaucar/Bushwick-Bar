@@ -29,7 +29,8 @@
   color: #D8D8D8;
 }
 
-.username_text_box, .email_text_box, .password_text_box {
+.username_text_box, .email_text_box, 
+.password_text_box, .cocktail_edit_name {
   background-color: black;
   color: #D8D8D8;
 }

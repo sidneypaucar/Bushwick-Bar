@@ -36,11 +36,13 @@ export default function CocktailEdit({ cocktails, handleCocktailUpdate }) {
           <input className='cocktail_edit_name'
             type='text'
             name='name'
+            placeholder="Pick Your Poison"
             value={name}
             onChange={handleChange}
           />
-      </label>
-      <button>Submit</button>
+        </label>
+        <br />
+      <button className='cocktail_create_button'>Submit</button>
     </form>
     </div>
   )

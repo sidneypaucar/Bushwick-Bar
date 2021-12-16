@@ -24,7 +24,11 @@ export default function CocktailCreate({handleCocktailCreate}) {
       <h3>Create Cocktail</h3>
       <label>
         Name:
-        <input type='text' name='name' value={name} onChange={handleChange} />
+          <input
+            type='text'
+            name='name' v
+            alue={name}
+            onChange={handleChange} />
       </label>
       <button>Submit</button>
     </form>
