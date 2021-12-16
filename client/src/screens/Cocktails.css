@@ -11,6 +11,7 @@
   background-attachment: fixed;
   height: calc(100vh - 55px);
   width: 100%;
+  z-index: -2;
 }
 
 .cocktails_title{
@@ -81,6 +82,24 @@
 }
 
 .cocktail_delete_button:hover {
+  color: rgb(255, 206, 81);
+  border-color: rgb(255, 206, 81);
+}
+
+.cocktails_select_button {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  background-color: black;
+  backdrop-filter: blur(8px);
+  border-radius: 4px;
+  border-color: rgb(189, 148, 62);
+  border-width: 1px;
+  border-style:solid;
+  color: rgb(189, 148, 62);
+  padding: 5px 15px;
+
+}
+
+.cocktails_select_button:hover {
   color: rgb(255, 206, 81);
   border-color: rgb(255, 206, 81);
 }

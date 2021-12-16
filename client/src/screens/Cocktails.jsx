@@ -26,7 +26,7 @@ export default function Cocktails({ cocktails, handleCocktailDelete, currentUser
       <Link to='/cocktails/new'>
         <br />
         <br />
-        <button>Create</button>
+        <button className='cocktails_select_button'>Create</button>
       </Link>
     </div>
   )

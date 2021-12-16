@@ -1,5 +1,6 @@
+
 .footer {
-  padding: 5px;
+  padding: 15px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -15,4 +16,10 @@
 
 .external-link:hover {
   color: orange;
+}
+
+.sidney {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #D8D8D8;
 }
