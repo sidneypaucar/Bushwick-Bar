@@ -77,3 +77,46 @@
 .ingredients_button:hover {
   color: rgb(189, 148, 62);
 }
+
+@media only screen and (max-width: 600px) {
+.header {
+  justify-content: space-around;
+}
+
+.title {
+  margin-left: 0px;
+}
+
+.nav {
+  margin-right: 0px;
+  margin-top: 5px;
+}
+
+.username {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sign_in_button {
+  margin-right: 0px;
+}
+
+.username_signout{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.cocktails_button{
+  font-size: 15px;
+}
+
+.ingredients_button{
+  font-size: 15px;
+}
+}

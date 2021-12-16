@@ -12,7 +12,7 @@
   z-index: -2;
 }
 
-.home-header {
+.home_header {
 	font-family: 'Cormorant', serif;
   backdrop-filter: blur(5px);
 	background-size: cover;
@@ -30,4 +30,20 @@
   color: whitesmoke;
   backdrop-filter: blur(5px);
   margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .home{
+    background-position: center;
+  }
+
+  .home_header{
+    display: none;
+  }
+
+  .slogan{
+    backdrop-filter: blur(1px);
+    
+    padding-top: 238px;
+  }
 }
