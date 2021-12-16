@@ -23,7 +23,8 @@ input{
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
-  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
   display: inline-block;
   color: #D8D8D8;
 }

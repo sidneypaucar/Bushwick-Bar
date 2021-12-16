@@ -13,17 +13,29 @@
 .cocktail_edit_form {
   position: center;
   text-align: center;
-  border-style: solid;
-  border-color: green;
-  border-width: 5px;
+  margin-top: 15vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
   display: inline-block;
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .cocktail_edit_title {
-  border-style: solid;
-  border-color: green;
-  border-width: 5px;
-  color: #D8D8D8;
+  font-family: 'Cormorant', serif;
+  font-size: 32px;
+  margin-bottom: 55px;
   text-decoration: underline;
+}
+
+.cocktail_edit_name{
+  background-color: black;
+  color: #D8D8D8;
+}
+
+input{
+  background-color:black;
+  padding: 10px 10px 10px 10px;
 }
