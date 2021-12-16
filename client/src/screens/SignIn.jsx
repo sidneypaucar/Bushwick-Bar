@@ -47,7 +47,7 @@ export default function SignIn(props) {
       </label>
         <br />
         <br />
-        <button>Submit</button>
+        <button className='signin_button'>Submit</button>
         <br />
         <br />
       <Link className= 'sign_up_link' to='/signup'>Don't have an account? Sign Up.</Link>

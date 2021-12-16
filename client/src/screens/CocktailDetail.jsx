@@ -27,7 +27,7 @@ export default function CocktailDetail( {ingredients} ) {
         </div>
       )}
       <form>
-        <select>
+        <select className='drop_down'>
           {ingredients.map(ingredient => (
             <option key= {ingredient.id}>{ingredient.name}</option>
           ))}
