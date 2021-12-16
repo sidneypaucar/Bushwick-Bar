@@ -17,20 +17,22 @@ export default function CocktailCreate({handleCocktailCreate}) {
 
   return (
     <div className= "cocktail_create_background">
-    <form onSubmit={(e) => {
+    <form className='cocktail_create_form' onSubmit={(e) => {
       e.preventDefault();
       handleCocktailCreate(formData);
     }}>
-      <h3>Create Cocktail</h3>
+      <h3 className='cocktail_create_title'>Create Cocktail</h3>
       <label>
-        Name:
-          <input
+          <input className='cocktail_create_text'
             type='text'
-            name='name' v
-            alue={name}
+            name='name' 
+            placeholder="Cocktail Name"
+            value={name}
             onChange={handleChange} />
-      </label>
-      <button>Submit</button>
+        </label>
+        <br />
+        <br />
+      <button className='create_submit_button'>Submit</button>
     </form>
     </div>
   )
