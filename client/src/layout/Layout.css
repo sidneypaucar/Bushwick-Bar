@@ -37,9 +37,16 @@
 }
 
 .sign_in_button {
-  color: #d8d8d8;
-  margin-bottom: 0%;
+  font-family: "Cormorant", serif;
+  font-size: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
   text-decoration: none;
+  color: #d8d8d8;
+}
+
+.sign_in_button:hover {
+  color: rgb(189, 148, 62);
 }
 
 .nav {

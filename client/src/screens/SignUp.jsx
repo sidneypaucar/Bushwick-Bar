@@ -27,35 +27,37 @@ export default function SignUp(props) {
     }}>
       <h3 className= 'sign_up_title'>Sign Up</h3>
       <label className = 'username_text_box'>
-        Username:
         <input
           type='text'
           name='username'
           value={username}
+          placeholder="Username"
           onChange={handleChange}
+          
         />
       </label>
       <br />
       <label className = 'email_text_box'>
-        Email:
         <input
           type='text'
           name='email'
           value={email}
+          placeholder="Email"
           onChange={handleChange}
         />
       </label>
       <br />
       <label className = 'password_text_box'>
-        Password:
         <input
           type='password'
           name='password'
           value={password}
+          placeholder="Password"
           onChange={handleChange}
         />
       </label>
-      <br />
+        <br />
+        <br />
       <button>Submit</button>
       </form>
     </div>

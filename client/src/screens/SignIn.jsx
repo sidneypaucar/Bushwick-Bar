@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+
 import './SignIn.css'
 
 export default function SignIn(props) {
@@ -26,24 +27,24 @@ export default function SignIn(props) {
     }}>
       <h3 className= 'sign_in_title'>Sign In</h3>
       <label className = 'username_text_box'>
-        Username:
         <input
           type='text'
           name='username'
           value={username}
+          placeholder="Username"
           onChange={handleChange}
         />
       </label >
         <br />
       <label className = 'password_text_box'>
-        Password:
         <input
           type='password'
           name='password'
           value={password}
+          placeholder="Password"
           onChange={handleChange}
         />
-        </label>
+      </label>
         <br />
         <br />
         <button>Submit</button>

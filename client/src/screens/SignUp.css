@@ -14,9 +14,11 @@
 .sign_up_form {
   position: center;
   text-align: center;
-  border-style: solid;
-  border-color: white;
-  border-width: 5px;
+  margin-top: 15vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  backdrop-filter: blur(3px);
   display: inline-block;
   color: #D8D8D8;
 }
@@ -27,14 +29,6 @@
   color: #D8D8D8;
 }
 
-/* .username_text_box {
-
+.username_text_box {
+  background-color: black;
 }
-
-.email_text_box {
-  
-}
-
-.password_text_box {
-  
-} */
