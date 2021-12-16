@@ -12,7 +12,8 @@ export default function Footer() {
         <ExternalLink className='external-link' href='https://github.com/sidneypaucar/Bushwick-Bar'><GitHubIcon />
         </ExternalLink>
         <br />
-        <p className='sidney'>© 2021 Bushwick Inc.</p>
+        <p className='sidney'>Sidney Paucar</p>
+        <p className='company'>© 2021 Bushwick Inc.</p>
         </footer>
     </div>
   )

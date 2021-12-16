@@ -20,9 +20,10 @@ input{
   position: center;
   text-align: center;
   margin-top: 15vh;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 30px;
+  border-radius: 10px;
   backdrop-filter: blur(8px);
   display: inline-block;
   color: #D8D8D8;
