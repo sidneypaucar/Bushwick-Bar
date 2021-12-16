@@ -15,9 +15,9 @@ export default function Cocktails({ cocktails, handleCocktailDelete, currentUser
           {currentUser && currentUser.id === cocktail.user_id && (
             <>
             <Link to={`/cocktails/${cocktail.id}/edit`}>
-            <button>Edit</button>
+            <button className='cocktail_edit_button'>Edit</button>
             </Link>
-            <button onClick={()=>handleCocktailDelete(cocktail.id)}>Delete</button>
+            <button className='cocktail_delete_button' onClick={()=>handleCocktailDelete(cocktail.id)}>Delete</button>
             </>
             )}
         </div>

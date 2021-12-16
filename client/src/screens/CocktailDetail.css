@@ -17,9 +17,11 @@
 .cocktail_details {
   position: center;
   text-align: center;
-  border-style: solid;
-  border-color: green;
-  border-width: 5px;
+  margin-top: 15vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  backdrop-filter: blur(3px);
   display: inline-block;
   color: #D8D8D8;
 }

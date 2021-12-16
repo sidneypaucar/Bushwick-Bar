@@ -32,12 +32,19 @@
 
 .cocktail_link:hover {
   color: rgb(189, 148, 62);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .cocktail_name{
   font-family: 'Cormorant', serif;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 0;
+}
 
+.cocktail_edit_button {
+  margin-right: 15px;
+}
+
+.cocktail_delete_button {
+  margin-left: 15px;
 }

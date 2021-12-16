@@ -26,8 +26,8 @@ export default function SignIn(props) {
       handleSignIn(formData);
     }}>
       <h3 className= 'sign_in_title'>Sign In</h3>
-      <label className = 'username_text_box'>
-        <input
+      <label >
+        <input className = 'username_text_box'
           type='text'
           name='username'
           value={username}
@@ -36,8 +36,8 @@ export default function SignIn(props) {
         />
       </label >
         <br />
-      <label className = 'password_text_box'>
-        <input
+      <label >
+        <input className = 'password_text_box'
           type='password'
           name='password'
           value={password}

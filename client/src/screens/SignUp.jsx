@@ -26,8 +26,8 @@ export default function SignUp(props) {
       handleSignUp(formData);
     }}>
       <h3 className= 'sign_up_title'>Sign Up</h3>
-      <label className = 'username_text_box'>
-        <input
+      <label>
+        <input className = 'username_text_box'
           type='text'
           name='username'
           value={username}
@@ -37,8 +37,8 @@ export default function SignUp(props) {
         />
       </label>
       <br />
-      <label className = 'email_text_box'>
-        <input
+      <label>
+        <input className = 'email_text_box'
           type='text'
           name='email'
           value={email}
@@ -47,8 +47,8 @@ export default function SignUp(props) {
         />
       </label>
       <br />
-      <label className = 'password_text_box'>
-        <input
+      <label>
+        <input className = 'password_text_box'
           type='password'
           name='password'
           value={password}
