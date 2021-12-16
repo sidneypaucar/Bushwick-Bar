@@ -1,28 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap");
 
-.layout{
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
-}
-
-.header { 
+.header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  /* z-index: 10; */
+  z-index: 10;
   position: relative;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .title {
-  font-family: 'Cormorant', serif;
-  font-size: 36;
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
-  color: #D8D8D8;
+  font-family: "Cormorant", serif;
+  font-size: 36px;
+  color: #d8d8d8;
+  margin-top: 20px;
+  margin-left: 30px;
   margin-bottom: 0%;
 }
 
@@ -31,72 +24,47 @@
 }
 
 .title_route {
-  color: #D8D8D8;
+  color: #d8d8d8;
   text-decoration: none;
 }
 
-.username_signout {
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
-}
-
 .username {
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
-
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 36px;
   margin-top: 0%;
   margin-bottom: 0%;
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
-.sign_out_button{
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
-}
-
-.sign_in_button{
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
-  color: #D8D8D8;
+.sign_in_button {
+  color: #d8d8d8;
   margin-bottom: 0%;
   text-decoration: none;
 }
 
 .nav {
-    font-size: 30px;
-    border-style: solid;
-    border-color: red;
-    border-width: 5px;
+  font-size: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 
-.cocktails_button{
-  font-family: 'Cormorant', serif;
+.cocktails_button {
+  font-family: "Cormorant", serif;
   font-size: 30px;
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
+  margin-right: 50px;
   text-decoration: none;
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .cocktails_button:hover {
   color: rgb(189, 148, 62);
 }
 
-.ingredients_button{
-  font-family: 'Cormorant', serif;
+.ingredients_button {
+  font-family: "Cormorant", serif;
   font-size: 30px;
-  border-style: solid;
-  border-color: red;
-  border-width: 5px;
   text-decoration: none;
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .ingredients_button:hover {

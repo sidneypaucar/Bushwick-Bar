@@ -15,7 +15,7 @@ export default function Layout({ currentUser, handleSignOut, children }) {
         {currentUser ? (
           <div className="username_signout">
             <p className= 'username'>{currentUser.username}</p>
-            <Button variant="outlined"  color="primary" className= 'sign_out_button' onClick={handleSignOut}>
+            <Button variant="outlined"  color="warning" className= 'sign_out_button' onClick={handleSignOut}>
               Sign Out
             </Button>
           </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+
 .sign_in_background {
   background-image: 
   url(https://bevspot.com/wp-content/uploads/2016/04/bigstock-Whiskey-Glass-With-Ice-In-Fron-65925334-scaled.jpg);
@@ -20,9 +22,8 @@
 }
 
 .sign_in_title {
-  border-style: solid;
-  border-color: white;
-  border-width: 5px;
+  font-family: 'Cormorant', serif;
+  font-size: 32px;
   color: #D8D8D8;
 }
 
