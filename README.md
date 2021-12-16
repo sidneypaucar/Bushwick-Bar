@@ -119,14 +119,7 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
 |__ components/
-      |__ Layout
-            |__ Layout.css
-            |__ Layout.jsx
       |__ Nav
             |__ Nav.css
             |__ Nav.jsx
@@ -135,6 +128,9 @@ src
             |__ Footer.jsx
 |__ containers/
       |__ MainContainer.jsx
+|__ Layout/
+      |__ Layout.css
+      |__ Layout.jsx
 |__ screens/
       |__ Home
             |__ Home.css
@@ -142,44 +138,56 @@ src
       |__ SignIn
             |__ SignIn.css
             |__ SignIn.jsx
-      |__ SignOut
-            |__ SignOut.css
-            |__ SignOut.jsx
-      |__ UserHome
-            |__ UserHome.css
-            |__ UserHome.jsx
+      |__ SignUp
+            |__ SignUp.css
+            |__ SignUp.jsx
       |__ Ingredients
             |__ Ingredients.css
             |__ Ingredients.jsx
       |__ Cocktails
             |__ Cocktails.css
             |__ Cocktails.jsx
-      |__ CreateCocktail
-            |__ CreateCocktail.css
-            |__ CreateCocktail.jsx
-      |__ EditCocktail
-            |__ EditCocktail.css
-            |__ EditCocktail.jsx
-      |__ DetailCocktail
-            |__ DetailCocktail.css
-            |__ DetailCocktail.jsx
+      |__ CocktailCreate
+            |__ CocktailCreate.css
+            |__ CocktailCreate.jsx
+      |__ CocktailEdit
+            |__ CocktailEdit.css
+            |__ CocktailEdit.jsx
+      |__ CocktailDetail
+            |__ CocktailDetail.css
+            |__ CocktailDetail.jsx
 |__ services/
       |__ apiConfig.jsx
       |__ auth.jsx
-      |__ Cocktails.jsx
+      |__ cocktail.jsx
+      |__ ingredient.jsx
 
 ```
 
 #### Time Estimates
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Complete Backend    |    H     |     1 hrs      |     1 hrs     |     TBD     |
-| Start FrontEnd      |    H     |     1 hrs      |     1 hrs     |     TBD     |
-| Start CSS           |    H     |     .5 hrs     |     1 hrs     |     TBD     |
-| CSS cont'd          |    H     |     .5 hrs     |     1 hrs     |     TBD     |
-| TOTAL               |          |     3 hrs      |     4 hrs     |     TBD     |
-
+| Task                   | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------- | :------: | :------------: | :-----------: | :---------: |
+| README                 |    H     |     7 hrs      |     9 hrs     |     TBD     |
+| Rails Setup            |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| Authentication Backend |    H     |     3 hrs      |     4 hrs     |     TBD     |
+| Seed DB                |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| FrontEnd Setup         |    H     |     3 hrs      |     4 hrs     |     TBD     |
+| SignIn                 |    H     |     2 hrs      |     3 hrs     |     TBD     |
+| SignUp                 |    H     |     2 hrs      |     3 hrs     |     TBD     |
+| Layout                 |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| Main Container         |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| Cocktails              |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| Ingredients            |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| Home                   |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| CocktailCreate         |    H     |     2 hrs      |     3 hrs     |     TBD     |
+| CocktailEdit           |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| CocktailDetail         |    H     |     2 hrs      |     4 hrs     |     TBD     |
+| CSS                    |    H     |     2 hrs      |    10 hrs     |     TBD     |
+| CSS cont'd             |    H     |     2 hrs      |     5 hrs     |     TBD     |
+| Deployment             |    H     |      1 hr      |     .5 hr     |     TBD     |
+| Media Queries          |    H     |      1 hr      |    2.5 hrs    |     TBD     |
+| TOTAL                  |          |     43 hrs     |    60 hrs     |     TBD     |
 
 <br>
 
