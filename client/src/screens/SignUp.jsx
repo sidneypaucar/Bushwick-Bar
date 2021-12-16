@@ -58,7 +58,7 @@ export default function SignUp(props) {
       </label>
         <br />
         <br />
-      <button>Submit</button>
+      <button className='signup_button'>Submit</button>
       </form>
     </div>
   )

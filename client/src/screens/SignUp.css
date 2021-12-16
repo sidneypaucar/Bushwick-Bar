@@ -11,6 +11,11 @@
   width: 100%;
 }
 
+input{
+  color:black;
+  padding: 10px 10px 10px 10px;
+}
+
 .sign_up_form {
   position: center;
   text-align: center;
@@ -18,7 +23,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(8px);
   display: inline-block;
   color: #D8D8D8;
 }
@@ -34,5 +39,23 @@
 {
   background-color: black;
   color: #D8D8D8;
+}
+
+.signup_button {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  margin-top: 15px;
+  background-color: black;
+  backdrop-filter: blur(8px);
+  border-radius: 4px;
+  border-color: rgb(189, 148, 62);
+  border-width: 1px;
+  border-style:solid;
+  color: rgb(189, 148, 62);
+  padding: 5px 15px;
+}
+
+.signup_button:hover {
+  color: rgb(255, 206, 81);
+  border-color: rgb(255, 206, 81);
 }
 
