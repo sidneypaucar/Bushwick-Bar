@@ -24,6 +24,9 @@ _**Bushwick Bar** is a full-stack web application where any member can openly cr
 
 ![](https://i.imgur.com/15gbeJj.png)
 
+<p align="center">
+  <img width="460" height="300" src="https://i.imgur.com/15gbeJj.png">
+</p>
 
 <br>
 
