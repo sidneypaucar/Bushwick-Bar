@@ -8,7 +8,6 @@
   background-position: 100%;
   background-attachment: fixed;
   width: 100%;
-  color: black;
 }
 
 .ingredient_title {
@@ -29,10 +28,18 @@
   .ingredient_background{
     background-position: center;
   }
+
   .ingredient_title {
     font-size: 30px;
     color: #D8D8D8;
     text-decoration: underline;
     margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .ingredient_id {
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }
+
