@@ -1,11 +1,11 @@
 class CocktailsController < ApplicationController
   before_action :set_cocktail, only: :show
-  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :authorize_request, only: [:index, :create, :update, :destroy]
   before_action :set_user_cocktail, only: [:update, :destroy]
 
   # GET /cocktails
   def index
-    @cocktails = Cocktail.all
+    @cocktails = @current_user.cocktails
 
     render json: @cocktails
   end

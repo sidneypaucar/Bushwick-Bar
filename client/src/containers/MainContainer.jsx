@@ -19,8 +19,8 @@ export default function MainContainer({ currentUser }) {
       const cocktailList = await getAllCocktails();
       setCocktails(cocktailList);
     }
-    fetchCocktails();
-  }, [])
+    if (currentUser) fetchCocktails();
+  }, [currentUser])
 
   useEffect(() => {
     const fetchIngredients = async () => {
