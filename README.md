@@ -21,11 +21,8 @@
 
 _**Bushwick Bar** is a full-stack web application where any member can openly craft their very own drink. From a virgin margarita, to a "Mr.Chow"("The Hangover" Movie Reference) blackout cocktail, the possibilites are ENDLESS. Craft your very own and head on out to the dancefloor!_
 
-
-![](https://i.imgur.com/15gbeJj.png)
-
 <p align="center">
-  <img width="460" height="300" src="https://i.imgur.com/15gbeJj.png">
+  <img width="400" height="400" src="https://i.imgur.com/15gbeJj.png">
 </p>
 
 <br>
