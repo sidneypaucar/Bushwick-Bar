@@ -53,7 +53,7 @@ export default function CocktailDetail( {ingredients} ) {
             <option key= {`options${ingredient.id}`} value= {ingredient.id}>{ingredient.name}</option>
           ))}
         </select>
-        <button>add</button>
+        <button className="add_button">add</button>
       </form>
     </div>
   )
